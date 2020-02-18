@@ -21,7 +21,7 @@ const Tab = ({ data, index }: { data: Array<any>; index: number }) => {
         <ExploreContainer name={`Tab ${index} page`}>
           <IonList inset>
             {data.map(item => (
-              <IonItem>
+              <IonItem key={item.line1}>
                 <IonLabel>{item.line1}</IonLabel>
                 <IonLabel>{item.line2}</IonLabel>
                 <IonLabel>{item.line3}</IonLabel>
